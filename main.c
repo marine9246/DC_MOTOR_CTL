@@ -50,8 +50,8 @@
 /*  グローバル変数  */
 bool Flag = true;
 unsigned int Duty = 511;
-char Msg1[] = "DC MOTOR SPD CTL";
-char Msg2[] = "Duty = XXXX";
+char Msg1[] = "DC MOTOR SPD CTL";       //タイトル表示
+char Msg2[] = "Duty = XXXX";            //Duty用に配列データ確保
 
 void main(void)
 {
