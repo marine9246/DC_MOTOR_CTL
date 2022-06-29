@@ -54,7 +54,7 @@
  */
 /*  グローバル変数  */
 bool Flag = true;   //true:Duty up,false:Duty down
-unsigned int Duty = 511;
+unsigned int Duty = 511;    //Duty 初期値
 char Msg1[] = "DC MOTOR SPD CTL";       //タイトル表示
 char Msg2[] = "Duty = XXXX";            //Duty用に配列データ確保
 
