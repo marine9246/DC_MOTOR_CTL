@@ -20180,7 +20180,7 @@ void lcd_str(const unsigned char* ptr);
 void lcd_clear(void);
 void lcd_icon(unsigned int num, unsigned char onoff);
 
-# 51 "main.c"
+# 56 "main.c"
 bool Flag = 1;
 unsigned int Duty = 511;
 char Msg1[] = "DC MOTOR SPD CTL";
@@ -20191,7 +20191,7 @@ void main(void)
 
 SYSTEM_Initialize();
 
-# 79
+# 84
 do { LATBbits.LATB1 = 0; } while(0);
 _delay((unsigned long)((10)*(32000000/4000.0)));
 do { LATBbits.LATB1 = 1; } while(0);

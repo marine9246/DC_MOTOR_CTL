@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.20\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\DC_MOTOR_CTL.X.production.sym \
   --cmf=dist/default/production\DC_MOTOR_CTL.X.production.cmf -z -Q16F1778 \
-  -oC:\Users\user\AppData\Local\Temp\s6jg.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\user\AppData\Local\Temp\se6c.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/DC_MOTOR_CTL.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=02410h-027EFh -pstack=STACK \
   -ACODE=00h-07FFhx8 -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 \
@@ -35,7 +35,7 @@ Linker command line:
   -ASFR31=0F80h-0FEFh -ACONFIG=08007h-08008h -DCONFIG=2 \
   -AIDLOC=08000h-08003h -DIDLOC=2 -preset_vec=00h,intentry,init,end_init \
   -ppowerup=CODE -pcinit=CODE -pfunctab=ENTRY -DCODE=2 -DSTRCODE=2 \
-  -DSTRING=2 -DCONST=2 -DENTRY=2 -k C:\Users\user\AppData\Local\Temp\s6jg.o \
+  -DSTRING=2 -DCONST=2 -DENTRY=2 -k C:\Users\user\AppData\Local\Temp\se6c.o \
   dist/default/production\DC_MOTOR_CTL.X.production.o 
 
 Object code version is 3.11
@@ -45,7 +45,7 @@ Machine type is 16F1778
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\user\AppData\Local\Temp\s6jg.o
+C:\Users\user\AppData\Local\Temp\se6c.o
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2        0       4
@@ -1208,7 +1208,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 56 in file "main.c"
+		line 61 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

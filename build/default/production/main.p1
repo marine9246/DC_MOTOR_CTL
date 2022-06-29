@@ -13840,19 +13840,19 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lcd_lib.h: 39: void lcd_str(const unsigned char* ptr);
 [; ;lcd_lib.h: 40: void lcd_clear(void);
 [; ;lcd_lib.h: 41: void lcd_icon(unsigned int num, unsigned char onoff);
-"51 main.c
+"56 main.c
 [v _Flag `uc ~T0 @X0 1 e ]
 [i _Flag
 -> -> 1 `i `uc
 ]
-[; ;main.c: 51: bool Flag = 1;
-"52
+[; ;main.c: 56: bool Flag = 1;
+"57
 [v _Duty `ui ~T0 @X0 1 e ]
 [i _Duty
 -> -> 511 `i `ui
 ]
-[; ;main.c: 52: unsigned int Duty = 511;
-"53
+[; ;main.c: 57: unsigned int Duty = 511;
+"58
 [v _Msg1 `uc ~T0 @X0 -> 0 `x e ]
 [i _Msg1
 :U ..
@@ -13875,8 +13875,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;main.c: 53: char Msg1[] = "DC MOTOR SPD CTL";
-"54
+[; ;main.c: 58: char Msg1[] = "DC MOTOR SPD CTL";
+"59
 [v _Msg2 `uc ~T0 @X0 -> 0 `x e ]
 [i _Msg2
 :U ..
@@ -13894,155 +13894,155 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;main.c: 54: char Msg2[] = "Duty = XXXX";
+[; ;main.c: 59: char Msg2[] = "Duty = XXXX";
 [v $root$_main `(v ~T0 @X0 0 e ]
-"56
+"61
 [v _main `(v ~T0 @X0 1 ef ]
-"57
+"62
 {
-[; ;main.c: 56: void main(void)
-[; ;main.c: 57: {
+[; ;main.c: 61: void main(void)
+[; ;main.c: 62: {
 [e :U _main ]
 [f ]
-[; ;main.c: 59: SYSTEM_Initialize();
-"59
+[; ;main.c: 64: SYSTEM_Initialize();
+"64
 [e ( _SYSTEM_Initialize ..  ]
-[; ;main.c: 79: do { LATBbits.LATB1 = 0; } while(0);
-"79
+[; ;main.c: 84: do { LATBbits.LATB1 = 0; } while(0);
+"84
 [e :U 1730 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1729 ]
-[; ;main.c: 80: _delay((unsigned long)((10)*(32000000/4000.0)));
-"80
+[; ;main.c: 85: _delay((unsigned long)((10)*(32000000/4000.0)));
+"85
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-[; ;main.c: 81: do { LATBbits.LATB1 = 1; } while(0);
-"81
+[; ;main.c: 86: do { LATBbits.LATB1 = 1; } while(0);
+"86
 [e :U 1733 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1732 ]
-[; ;main.c: 82: lcd_init();
-"82
+[; ;main.c: 87: lcd_init();
+"87
 [e ( _lcd_init ..  ]
-[; ;main.c: 83: lcd_cmd(0x80);
-"83
-[e ( _lcd_cmd (1 -> -> 128 `i `uc ]
-[; ;main.c: 84: lcd_str(Msg1);
-"84
-[e ( _lcd_str (1 -> &U _Msg1 `*Cuc ]
-[; ;main.c: 86: COG3CON0bits.MD = 2;
-"86
-[e = . . _COG3CON0bits 0 0 -> -> 2 `i `uc ]
-[; ;main.c: 88: while (1) {
+[; ;main.c: 88: lcd_cmd(0x80);
 "88
+[e ( _lcd_cmd (1 -> -> 128 `i `uc ]
+[; ;main.c: 89: lcd_str(Msg1);
+"89
+[e ( _lcd_str (1 -> &U _Msg1 `*Cuc ]
+[; ;main.c: 91: COG3CON0bits.MD = 2;
+"91
+[e = . . _COG3CON0bits 0 0 -> -> 2 `i `uc ]
+[; ;main.c: 93: while (1) {
+"93
 [e :U 1735 ]
 {
-[; ;main.c: 89: sprintf(Msg2, "Duty = %4d", Duty);
-"89
-[e ( _sprintf (1 , (. , &U _Msg2 :s 1C _Duty ]
-[; ;main.c: 90: lcd_cmd(0xC0);
-"90
-[e ( _lcd_cmd (1 -> -> 192 `i `uc ]
-[; ;main.c: 91: lcd_str(Msg2);
-"91
-[e ( _lcd_str (1 -> &U _Msg2 `*Cuc ]
-[; ;main.c: 92: _delay((unsigned long)((50)*(32000000/4000.0)));
-"92
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-[; ;main.c: 94: if (PORTBbits.RB5 == 0) {
+[; ;main.c: 94: sprintf(Msg2, "Duty = %4d", Duty);
 "94
+[e ( _sprintf (1 , (. , &U _Msg2 :s 1C _Duty ]
+[; ;main.c: 95: lcd_cmd(0xC0);
+"95
+[e ( _lcd_cmd (1 -> -> 192 `i `uc ]
+[; ;main.c: 96: lcd_str(Msg2);
+"96
+[e ( _lcd_str (1 -> &U _Msg2 `*Cuc ]
+[; ;main.c: 97: _delay((unsigned long)((50)*(32000000/4000.0)));
+"97
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;main.c: 99: if (PORTBbits.RB5 == 0) {
+"99
 [e $ ! == -> . . _PORTBbits 0 5 `i -> 0 `i 1737  ]
 {
-[; ;main.c: 95: if (Flag == 1) {
-"95
+[; ;main.c: 100: if (Flag == 1) {
+"100
 [e $ ! == -> _Flag `i -> 1 `i 1738  ]
 {
-[; ;main.c: 96: if (Duty < 1024) {
-"96
+[; ;main.c: 101: if (Duty < 1024) {
+"101
 [e $ ! < _Duty -> -> 1024 `i `ui 1739  ]
 {
-[; ;main.c: 97: do { LATBbits.LATB4 = 1; } while(0);
-"97
+[; ;main.c: 102: do { LATBbits.LATB4 = 1; } while(0);
+"102
 [e :U 1742 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
 [e :U 1741 ]
-[; ;main.c: 98: PWM1_LoadDutyValue(Duty++);
-"98
+[; ;main.c: 103: PWM1_LoadDutyValue(Duty++);
+"103
 [e ( _PWM1_LoadDutyValue (1 ++ _Duty -> -> 1 `i `ui ]
-[; ;main.c: 99: _delay((unsigned long)((10)*(32000000/4000.0)));
-"99
+[; ;main.c: 104: _delay((unsigned long)((10)*(32000000/4000.0)));
+"104
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"100
+"105
 }
-[; ;main.c: 100: } else {
+[; ;main.c: 105: } else {
 [e $U 1743  ]
 [e :U 1739 ]
 {
-[; ;main.c: 101: Flag = 0;
-"101
+[; ;main.c: 106: Flag = 0;
+"106
 [e = _Flag -> -> 0 `i `uc ]
-"102
+"107
 }
 [e :U 1743 ]
-"104
+"109
 }
-[; ;main.c: 102: }
-[; ;main.c: 104: } else {
+[; ;main.c: 107: }
+[; ;main.c: 109: } else {
 [e $U 1744  ]
 [e :U 1738 ]
 {
-[; ;main.c: 105: if (Duty > 0) {
-"105
+[; ;main.c: 110: if (Duty > 0) {
+"110
 [e $ ! > _Duty -> -> 0 `i `ui 1745  ]
 {
-[; ;main.c: 106: do { LATBbits.LATB4 = 0; } while(0);
-"106
+[; ;main.c: 111: do { LATBbits.LATB4 = 0; } while(0);
+"111
 [e :U 1748 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
 [e :U 1747 ]
-[; ;main.c: 107: PWM1_LoadDutyValue(Duty--);
-"107
+[; ;main.c: 112: PWM1_LoadDutyValue(Duty--);
+"112
 [e ( _PWM1_LoadDutyValue (1 -- _Duty -> -> 1 `i `ui ]
-[; ;main.c: 108: _delay((unsigned long)((10)*(32000000/4000.0)));
-"108
+[; ;main.c: 113: _delay((unsigned long)((10)*(32000000/4000.0)));
+"113
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"109
+"114
 }
-[; ;main.c: 109: } else {
+[; ;main.c: 114: } else {
 [e $U 1749  ]
 [e :U 1745 ]
 {
-[; ;main.c: 110: Flag = 1;
-"110
+[; ;main.c: 115: Flag = 1;
+"115
 [e = _Flag -> -> 1 `i `uc ]
-"111
+"116
 }
 [e :U 1749 ]
-"112
+"117
 }
 [e :U 1744 ]
-"114
+"119
 }
 [e :U 1737 ]
-"115
+"120
 }
 [e :U 1734 ]
-"88
+"93
 [e $U 1735  ]
 [e :U 1736 ]
-[; ;main.c: 111: }
-[; ;main.c: 112: }
-[; ;main.c: 114: }
-[; ;main.c: 115: }
 [; ;main.c: 116: }
-"116
+[; ;main.c: 117: }
+[; ;main.c: 119: }
+[; ;main.c: 120: }
+[; ;main.c: 121: }
+"121
 [e :UE 1727 ]
 }
 [p f _sprintf 8421504 ]

@@ -40,6 +40,11 @@
     OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS 
     SOFTWARE.
  */
+/*******************************************************************************
+ *  DCモータのPWMによるスピードコントローラー
+ *  Duty 0～1023を中央値511（Duty50%)から始め、max値1023まで到達したなら減算
+ *  0まで達したら、1023まで加算
+ ******************************************************************************/
 #include "mcc_generated_files/mcc.h"
 #include "lcd_lib.h"
 #include <stdio.h>

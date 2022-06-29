@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\user\AppData\Local\Temp\s6jg.o
+$C:\Users\user\AppData\Local\Temp\se6c.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 4 8007 8007 2 2
@@ -214,37 +214,37 @@ STRING 86D-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\DC_MOTOR_CTL.X.production.o
-7DD cinit CODE >9658:C:\Users\user\AppData\Local\Temp\s6jg.s
-7DD cinit CODE >9661:C:\Users\user\AppData\Local\Temp\s6jg.s
-7DD cinit CODE >9711:C:\Users\user\AppData\Local\Temp\s6jg.s
-7DE cinit CODE >9712:C:\Users\user\AppData\Local\Temp\s6jg.s
-7DF cinit CODE >9713:C:\Users\user\AppData\Local\Temp\s6jg.s
-7E0 cinit CODE >9714:C:\Users\user\AppData\Local\Temp\s6jg.s
-7E1 cinit CODE >9715:C:\Users\user\AppData\Local\Temp\s6jg.s
-7E2 cinit CODE >9716:C:\Users\user\AppData\Local\Temp\s6jg.s
-7E3 cinit CODE >9717:C:\Users\user\AppData\Local\Temp\s6jg.s
-7E4 cinit CODE >9718:C:\Users\user\AppData\Local\Temp\s6jg.s
-7E5 cinit CODE >9719:C:\Users\user\AppData\Local\Temp\s6jg.s
-7E6 cinit CODE >9720:C:\Users\user\AppData\Local\Temp\s6jg.s
-7E9 cinit CODE >9724:C:\Users\user\AppData\Local\Temp\s6jg.s
-7EA cinit CODE >9725:C:\Users\user\AppData\Local\Temp\s6jg.s
-7EB cinit CODE >9726:C:\Users\user\AppData\Local\Temp\s6jg.s
-7EC cinit CODE >9727:C:\Users\user\AppData\Local\Temp\s6jg.s
-7ED cinit CODE >9728:C:\Users\user\AppData\Local\Temp\s6jg.s
-7EE cinit CODE >9729:C:\Users\user\AppData\Local\Temp\s6jg.s
-7EF cinit CODE >9730:C:\Users\user\AppData\Local\Temp\s6jg.s
-7F0 cinit CODE >9731:C:\Users\user\AppData\Local\Temp\s6jg.s
-7F1 cinit CODE >9732:C:\Users\user\AppData\Local\Temp\s6jg.s
-7F2 cinit CODE >9733:C:\Users\user\AppData\Local\Temp\s6jg.s
-7F5 cinit CODE >9750:C:\Users\user\AppData\Local\Temp\s6jg.s
-7F6 cinit CODE >9751:C:\Users\user\AppData\Local\Temp\s6jg.s
-7F7 cinit CODE >9752:C:\Users\user\AppData\Local\Temp\s6jg.s
-7F8 cinit CODE >9753:C:\Users\user\AppData\Local\Temp\s6jg.s
-7F9 cinit CODE >9754:C:\Users\user\AppData\Local\Temp\s6jg.s
-7FA cinit CODE >9755:C:\Users\user\AppData\Local\Temp\s6jg.s
-7FD cinit CODE >9761:C:\Users\user\AppData\Local\Temp\s6jg.s
-7FD cinit CODE >9763:C:\Users\user\AppData\Local\Temp\s6jg.s
-7FE cinit CODE >9764:C:\Users\user\AppData\Local\Temp\s6jg.s
+7DD cinit CODE >9658:C:\Users\user\AppData\Local\Temp\se6c.s
+7DD cinit CODE >9661:C:\Users\user\AppData\Local\Temp\se6c.s
+7DD cinit CODE >9711:C:\Users\user\AppData\Local\Temp\se6c.s
+7DE cinit CODE >9712:C:\Users\user\AppData\Local\Temp\se6c.s
+7DF cinit CODE >9713:C:\Users\user\AppData\Local\Temp\se6c.s
+7E0 cinit CODE >9714:C:\Users\user\AppData\Local\Temp\se6c.s
+7E1 cinit CODE >9715:C:\Users\user\AppData\Local\Temp\se6c.s
+7E2 cinit CODE >9716:C:\Users\user\AppData\Local\Temp\se6c.s
+7E3 cinit CODE >9717:C:\Users\user\AppData\Local\Temp\se6c.s
+7E4 cinit CODE >9718:C:\Users\user\AppData\Local\Temp\se6c.s
+7E5 cinit CODE >9719:C:\Users\user\AppData\Local\Temp\se6c.s
+7E6 cinit CODE >9720:C:\Users\user\AppData\Local\Temp\se6c.s
+7E9 cinit CODE >9724:C:\Users\user\AppData\Local\Temp\se6c.s
+7EA cinit CODE >9725:C:\Users\user\AppData\Local\Temp\se6c.s
+7EB cinit CODE >9726:C:\Users\user\AppData\Local\Temp\se6c.s
+7EC cinit CODE >9727:C:\Users\user\AppData\Local\Temp\se6c.s
+7ED cinit CODE >9728:C:\Users\user\AppData\Local\Temp\se6c.s
+7EE cinit CODE >9729:C:\Users\user\AppData\Local\Temp\se6c.s
+7EF cinit CODE >9730:C:\Users\user\AppData\Local\Temp\se6c.s
+7F0 cinit CODE >9731:C:\Users\user\AppData\Local\Temp\se6c.s
+7F1 cinit CODE >9732:C:\Users\user\AppData\Local\Temp\se6c.s
+7F2 cinit CODE >9733:C:\Users\user\AppData\Local\Temp\se6c.s
+7F5 cinit CODE >9750:C:\Users\user\AppData\Local\Temp\se6c.s
+7F6 cinit CODE >9751:C:\Users\user\AppData\Local\Temp\se6c.s
+7F7 cinit CODE >9752:C:\Users\user\AppData\Local\Temp\se6c.s
+7F8 cinit CODE >9753:C:\Users\user\AppData\Local\Temp\se6c.s
+7F9 cinit CODE >9754:C:\Users\user\AppData\Local\Temp\se6c.s
+7FA cinit CODE >9755:C:\Users\user\AppData\Local\Temp\se6c.s
+7FD cinit CODE >9761:C:\Users\user\AppData\Local\Temp\se6c.s
+7FD cinit CODE >9763:C:\Users\user\AppData\Local\Temp\se6c.s
+7FE cinit CODE >9764:C:\Users\user\AppData\Local\Temp\se6c.s
 268 text65 CODE >82:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\mcc_generated_files/pwm1.c
 268 text65 CODE >84:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\mcc_generated_files/pwm1.c
 26C text65 CODE >87:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\mcc_generated_files/pwm1.c
@@ -727,48 +727,48 @@ FD text44 CODE >528:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\mcc_generated_fi
 7C4 text1 CODE >553:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\doprnt.c
 7D8 text1 CODE >1564:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\doprnt.c
 7DC text1 CODE >1567:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\doprnt.c
-5F6 maintext CODE >56:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-5F6 maintext CODE >59:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-5F9 maintext CODE >79:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-5FB maintext CODE >80:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-604 maintext CODE >81:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-606 maintext CODE >82:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-609 maintext CODE >83:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-60D maintext CODE >84:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-611 maintext CODE >86:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-616 maintext CODE >89:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-623 maintext CODE >90:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-627 maintext CODE >91:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-62B maintext CODE >92:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-637 maintext CODE >94:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-63C maintext CODE >95:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-641 maintext CODE >96:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-64A maintext CODE >97:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-64C maintext CODE >98:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-659 maintext CODE >99:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-662 maintext CODE >100:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-663 maintext CODE >101:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-665 maintext CODE >105:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-66B maintext CODE >106:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-66D maintext CODE >107:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-67B maintext CODE >109:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-67B maintext CODE >110:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
-168 clrtext CODE >9739:C:\Users\user\AppData\Local\Temp\s6jg.s
-168 clrtext CODE >9740:C:\Users\user\AppData\Local\Temp\s6jg.s
-169 clrtext CODE >9741:C:\Users\user\AppData\Local\Temp\s6jg.s
-169 clrtext CODE >9742:C:\Users\user\AppData\Local\Temp\s6jg.s
-16A clrtext CODE >9743:C:\Users\user\AppData\Local\Temp\s6jg.s
-16B clrtext CODE >9744:C:\Users\user\AppData\Local\Temp\s6jg.s
-16C clrtext CODE >9745:C:\Users\user\AppData\Local\Temp\s6jg.s
-16D clrtext CODE >9746:C:\Users\user\AppData\Local\Temp\s6jg.s
-16E inittext CODE >9700:C:\Users\user\AppData\Local\Temp\s6jg.s
-16E inittext CODE >9701:C:\Users\user\AppData\Local\Temp\s6jg.s
-16F inittext CODE >9702:C:\Users\user\AppData\Local\Temp\s6jg.s
-16F inittext CODE >9703:C:\Users\user\AppData\Local\Temp\s6jg.s
-170 inittext CODE >9704:C:\Users\user\AppData\Local\Temp\s6jg.s
-171 inittext CODE >9705:C:\Users\user\AppData\Local\Temp\s6jg.s
-172 inittext CODE >9706:C:\Users\user\AppData\Local\Temp\s6jg.s
-173 inittext CODE >9707:C:\Users\user\AppData\Local\Temp\s6jg.s
+5F6 maintext CODE >61:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+5F6 maintext CODE >64:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+5F9 maintext CODE >84:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+5FB maintext CODE >85:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+604 maintext CODE >86:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+606 maintext CODE >87:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+609 maintext CODE >88:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+60D maintext CODE >89:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+611 maintext CODE >91:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+616 maintext CODE >94:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+623 maintext CODE >95:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+627 maintext CODE >96:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+62B maintext CODE >97:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+637 maintext CODE >99:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+63C maintext CODE >100:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+641 maintext CODE >101:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+64A maintext CODE >102:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+64C maintext CODE >103:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+659 maintext CODE >104:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+662 maintext CODE >105:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+663 maintext CODE >106:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+665 maintext CODE >110:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+66B maintext CODE >111:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+66D maintext CODE >112:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+67B maintext CODE >114:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+67B maintext CODE >115:C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+168 clrtext CODE >9739:C:\Users\user\AppData\Local\Temp\se6c.s
+168 clrtext CODE >9740:C:\Users\user\AppData\Local\Temp\se6c.s
+169 clrtext CODE >9741:C:\Users\user\AppData\Local\Temp\se6c.s
+169 clrtext CODE >9742:C:\Users\user\AppData\Local\Temp\se6c.s
+16A clrtext CODE >9743:C:\Users\user\AppData\Local\Temp\se6c.s
+16B clrtext CODE >9744:C:\Users\user\AppData\Local\Temp\se6c.s
+16C clrtext CODE >9745:C:\Users\user\AppData\Local\Temp\se6c.s
+16D clrtext CODE >9746:C:\Users\user\AppData\Local\Temp\se6c.s
+16E inittext CODE >9700:C:\Users\user\AppData\Local\Temp\se6c.s
+16E inittext CODE >9701:C:\Users\user\AppData\Local\Temp\se6c.s
+16F inittext CODE >9702:C:\Users\user\AppData\Local\Temp\se6c.s
+16F inittext CODE >9703:C:\Users\user\AppData\Local\Temp\se6c.s
+170 inittext CODE >9704:C:\Users\user\AppData\Local\Temp\se6c.s
+171 inittext CODE >9705:C:\Users\user\AppData\Local\Temp\se6c.s
+172 inittext CODE >9706:C:\Users\user\AppData\Local\Temp\se6c.s
+173 inittext CODE >9707:C:\Users\user\AppData\Local\Temp\se6c.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -829,13 +829,13 @@ _WPUA 20C 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 _WPUB 20D 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 _WPUC 20E 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 _WPUE 210 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\s6jg.o
+___sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\se6c.o
 _main BEC 0 CODE 0 maintext dist/default/production\DC_MOTOR_CTL.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 __end_of_I2C_MasterOperation 5F6 0 CODE 0 text13 dist/default/production\DC_MOTOR_CTL.X.production.o
 __end_of_I2C_MasterSendTxData 254 0 CODE 0 text35 dist/default/production\DC_MOTOR_CTL.X.production.o
 I2C_SetCallback@cb 70 0 COMMON 1 cstackCOMMON dist/default/production\DC_MOTOR_CTL.X.production.o
-start 4 0 CODE 0 init C:\Users\user\AppData\Local\Temp\s6jg.o
+start 4 0 CODE 0 init C:\Users\user\AppData\Local\Temp\se6c.o
 __size_of_main 0 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 __size_of___lwdiv 0 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 __size_of___lwmod 0 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
@@ -866,12 +866,12 @@ _I2C_SetBuffer 3E2 0 CODE 0 text49 dist/default/production\DC_MOTOR_CTL.X.produc
 rd1RegCompleteHandler@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\DC_MOTOR_CTL.X.production.o
 __size_of_rd1RegCompleteHandler 0 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 __end_of_I2C_MasterFsm 7FE 0 CODE 0 text16 dist/default/production\DC_MOTOR_CTL.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\s6jg.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\s6jg.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\s6jg.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\s6jg.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\s6jg.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\s6jg.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\se6c.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\se6c.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\se6c.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\se6c.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\se6c.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\se6c.o
 _PWM1_Initialize 32C 0 CODE 0 text60 dist/default/production\DC_MOTOR_CTL.X.production.o
 __end_of_I2C_MasterClearIrq 202 0 CODE 0 text56 dist/default/production\DC_MOTOR_CTL.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
@@ -919,8 +919,8 @@ _INLVLB 38D 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 _INLVLC 38E 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 __end_of_I2C_DO_ADDRESS_NACK 6BC 0 CODE 0 text17 dist/default/production\DC_MOTOR_CTL.X.production.o
 __size_of_I2C_MasterEnableRestart 0 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
-___stackhi 27EF 0 ABS 0 - C:\Users\user\AppData\Local\Temp\s6jg.o
-___stacklo 2410 0 ABS 0 - C:\Users\user\AppData\Local\Temp\s6jg.o
+___stackhi 27EF 0 ABS 0 - C:\Users\user\AppData\Local\Temp\se6c.o
+___stacklo 2410 0 ABS 0 - C:\Users\user\AppData\Local\Temp\se6c.o
 __end_of_I2C_DO_SEND_ADR_READ 318 0 CODE 0 text30 dist/default/production\DC_MOTOR_CTL.X.production.o
 _dpowers 10B0 0 STRCODE 0 stringtext3 dist/default/production\DC_MOTOR_CTL.X.production.o
 __size_of_I2C_DO_SEND_RESTART 0 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
@@ -964,7 +964,7 @@ I2C_SetDataCompleteCallback@cb 75 0 COMMON 1 cstackCOMMON dist/default/productio
 _I2C_DO_SEND_RESTART 272 0 CODE 0 text23 dist/default/production\DC_MOTOR_CTL.X.production.o
 _WDTCON 99 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 __end_of_COG3_Initialize 674 0 CODE 0 text64 dist/default/production\DC_MOTOR_CTL.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\s6jg.o
+___int_sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\se6c.o
 __end_of_I2C_SetBuffer 402 0 CODE 0 text49 dist/default/production\DC_MOTOR_CTL.X.production.o
 _rd2RegCompleteHandler 446 0 CODE 0 text42 dist/default/production\DC_MOTOR_CTL.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
@@ -1154,7 +1154,7 @@ _lcd_init A42 0 CODE 0 text8 dist/default/production\DC_MOTOR_CTL.X.production.o
 __Lintentry 4 0 CODE 0 intentry -
 _lcd_cmd 8DA 0 CODE 0 text9 dist/default/production\DC_MOTOR_CTL.X.production.o
 _lcd_str 552 0 CODE 0 text6 dist/default/production\DC_MOTOR_CTL.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\user\AppData\Local\Temp\s6jg.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\user\AppData\Local\Temp\se6c.o
 __size_of_wr2RegCompleteHandler 0 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 _CCPTMRS1bits 29E 0 ABS 0 - dist/default/production\DC_MOTOR_CTL.X.production.o
 _I2C_DO_RESET 2A4 0 CODE 0 text18 dist/default/production\DC_MOTOR_CTL.X.production.o

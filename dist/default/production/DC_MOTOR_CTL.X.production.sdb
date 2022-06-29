@@ -143,7 +143,7 @@ I2C_FAIL 2
 [v _lcd_init lcd_init `(v  1 e 1 0 ]
 "83
 [v _lcd_str lcd_str `(v  1 e 1 0 ]
-"56 C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+"61 C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "58 C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\mcc_generated_files/cog3.c
 [v _COG3_Initialize COG3_Initialize `(v  1 e 1 0 ]
@@ -716,13 +716,13 @@ I2C_FAIL 2
 [v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
 "19 C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\lcd_lib.h
 [v _ICON ICON `DC[14][2]ui  1 e 56 0 ]
-"51 C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+"56 C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
 [v _Flag Flag `uc  1 e 1 0 ]
-"52
+"57
 [v _Duty Duty `ui  1 e 2 0 ]
-"53
+"58
 [v _Msg1 Msg1 `[17]uc  1 e 17 0 ]
-"54
+"59
 [v _Msg2 Msg2 `[12]uc  1 e 12 0 ]
 "146 C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\mcc_generated_files/i2c_master.c
 [v _i2c_fsmStateTable i2c_fsmStateTable `DC[16]*.37(E11990  1 e 32 0 ]
@@ -733,10 +733,10 @@ I2C_FAIL 2
 ]
 "165
 [v _I2C_Status I2C_Status `S842  1 e 29 0 ]
-"56 C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
+"61 C:\Users\user\MPLABXProjects\DC_MOTOR_CTL.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"116
+"121
 } 0
 "505 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
