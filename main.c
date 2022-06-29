@@ -91,9 +91,9 @@ void main(void)
     COG3CON0bits.MD = 2; //正転モード
 
     while (1) {
-        sprintf(Msg2, "Duty = %4d", Duty);
+        sprintf(Msg2, "Duty = %4d", Duty);      //Msg2(文字配列)に書式設定でDutyを設定
         lcd_cmd(0xC0); //2行目指定
-        lcd_str(Msg2);
+        lcd_str(Msg2);  //Duty出力
         __delay_ms(50);
 
         if (S1_GetValue() == 0) { //S1押下確認
