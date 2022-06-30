@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"22 lcd_lib.c
+"24 lcd_lib.c
 [c E11949 0 1 2 .. ]
 [n E11949 . I2C_NOERR I2C_BUSY I2C_FAIL  ]
 "101 mcc_generated_files/i2c_master.h
@@ -13805,233 +13805,233 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.h: 73: void SYSTEM_Initialize(void);
 [; ;mcc.h: 86: void OSCILLATOR_Initialize(void);
 [; ;mcc.h: 98: void WDT_Initialize(void);
-"16 lcd_lib.c
+"18 lcd_lib.c
 [v _lcd_data `(v ~T0 @X0 1 ef1`uc ]
-"17
-{
-[; ;lcd_lib.c: 16: void lcd_data(unsigned char data)
-[; ;lcd_lib.c: 17: {
-[e :U _lcd_data ]
-"16
-[v _data `uc ~T0 @X0 1 r1 ]
-"17
-[f ]
-"18
-[v _tbuf `uc ~T0 @X0 -> 2 `i a ]
-[; ;lcd_lib.c: 18: unsigned char tbuf[2];
-[; ;lcd_lib.c: 19: tbuf[0] = 0x40;
 "19
-[e = *U + &U _tbuf * -> -> -> 0 `i `ui `ux -> -> # *U &U _tbuf `ui `ux -> -> 64 `i `uc ]
-[; ;lcd_lib.c: 20: tbuf[1] = data;
+{
+[; ;lcd_lib.c: 18: void lcd_data(unsigned char data)
+[; ;lcd_lib.c: 19: {
+[e :U _lcd_data ]
+"18
+[v _data `uc ~T0 @X0 1 r1 ]
+"19
+[f ]
 "20
-[e = *U + &U _tbuf * -> -> -> 1 `i `ui `ux -> -> # *U &U _tbuf `ui `ux _data ]
-[; ;lcd_lib.c: 22: while (!I2C_Open(0x3E));
+[v _tbuf `uc ~T0 @X0 -> 2 `i a ]
+[; ;lcd_lib.c: 20: unsigned char tbuf[2];
+[; ;lcd_lib.c: 21: tbuf[0] = 0x40;
+"21
+[e = *U + &U _tbuf * -> -> -> 0 `i `ui `ux -> -> # *U &U _tbuf `ui `ux -> -> 64 `i `uc ]
+[; ;lcd_lib.c: 22: tbuf[1] = data;
 "22
+[e = *U + &U _tbuf * -> -> -> 1 `i `ui `ux -> -> # *U &U _tbuf `ui `ux _data ]
+[; ;lcd_lib.c: 24: while (!I2C_Open(0x3E));
+"24
 [e $U 1728  ]
 [e :U 1729 ]
 [e :U 1728 ]
 [e $ ! != -> ( _I2C_Open (1 -> -> 62 `i `uc `i -> -> -> 0 `i `E11949 `i 1729  ]
 [e :U 1730 ]
-[; ;lcd_lib.c: 23: I2C_SetBuffer(tbuf, 2);
-"23
+[; ;lcd_lib.c: 25: I2C_SetBuffer(tbuf, 2);
+"25
 [e ( _I2C_SetBuffer (2 , -> &U _tbuf `*v -> -> 2 `i `ui ]
-[; ;lcd_lib.c: 24: I2C_MasterWrite();
-"24
-[e ( _I2C_MasterWrite ..  ]
-[; ;lcd_lib.c: 26: while (I2C_BUSY == I2C_Close());
+[; ;lcd_lib.c: 26: I2C_MasterWrite();
 "26
+[e ( _I2C_MasterWrite ..  ]
+[; ;lcd_lib.c: 28: while (I2C_BUSY == I2C_Close());
+"28
 [e $U 1731  ]
 [e :U 1732 ]
 [e :U 1731 ]
 [e $ == -> . `E11949 1 `i -> ( _I2C_Close ..  `i 1732  ]
 [e :U 1733 ]
-[; ;lcd_lib.c: 27: _delay((unsigned long)((30)*(32000000/4000000.0)));
-"27
+[; ;lcd_lib.c: 29: _delay((unsigned long)((30)*(32000000/4000000.0)));
+"29
 [e ( __delay (1 -> * -> -> 30 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-[; ;lcd_lib.c: 28: }
-"28
+[; ;lcd_lib.c: 30: }
+"30
 [e :UE 1727 ]
 }
-"33
-[v _lcd_cmd `(v ~T0 @X0 1 ef1`uc ]
-"34
-{
-[; ;lcd_lib.c: 33: void lcd_cmd(unsigned char cmd)
-[; ;lcd_lib.c: 34: {
-[e :U _lcd_cmd ]
-"33
-[v _cmd `uc ~T0 @X0 1 r1 ]
-"34
-[f ]
 "35
-[v _tbuf `uc ~T0 @X0 -> 2 `i a ]
-[; ;lcd_lib.c: 35: unsigned char tbuf[2];
-[; ;lcd_lib.c: 36: tbuf[0] = 0x00;
+[v _lcd_cmd `(v ~T0 @X0 1 ef1`uc ]
 "36
-[e = *U + &U _tbuf * -> -> -> 0 `i `ui `ux -> -> # *U &U _tbuf `ui `ux -> -> 0 `i `uc ]
-[; ;lcd_lib.c: 37: tbuf[1] = cmd;
+{
+[; ;lcd_lib.c: 35: void lcd_cmd(unsigned char cmd)
+[; ;lcd_lib.c: 36: {
+[e :U _lcd_cmd ]
+"35
+[v _cmd `uc ~T0 @X0 1 r1 ]
+"36
+[f ]
 "37
-[e = *U + &U _tbuf * -> -> -> 1 `i `ui `ux -> -> # *U &U _tbuf `ui `ux _cmd ]
-[; ;lcd_lib.c: 39: while (!I2C_Open(0x3E));
+[v _tbuf `uc ~T0 @X0 -> 2 `i a ]
+[; ;lcd_lib.c: 37: unsigned char tbuf[2];
+[; ;lcd_lib.c: 38: tbuf[0] = 0x00;
+"38
+[e = *U + &U _tbuf * -> -> -> 0 `i `ui `ux -> -> # *U &U _tbuf `ui `ux -> -> 0 `i `uc ]
+[; ;lcd_lib.c: 39: tbuf[1] = cmd;
 "39
+[e = *U + &U _tbuf * -> -> -> 1 `i `ui `ux -> -> # *U &U _tbuf `ui `ux _cmd ]
+[; ;lcd_lib.c: 41: while (!I2C_Open(0x3E));
+"41
 [e $U 1735  ]
 [e :U 1736 ]
 [e :U 1735 ]
 [e $ ! != -> ( _I2C_Open (1 -> -> 62 `i `uc `i -> -> -> 0 `i `E11949 `i 1736  ]
 [e :U 1737 ]
-[; ;lcd_lib.c: 40: I2C_SetBuffer(tbuf, 2);
-"40
+[; ;lcd_lib.c: 42: I2C_SetBuffer(tbuf, 2);
+"42
 [e ( _I2C_SetBuffer (2 , -> &U _tbuf `*v -> -> 2 `i `ui ]
-[; ;lcd_lib.c: 41: I2C_MasterWrite();
-"41
-[e ( _I2C_MasterWrite ..  ]
-[; ;lcd_lib.c: 43: while (I2C_BUSY == I2C_Close());
+[; ;lcd_lib.c: 43: I2C_MasterWrite();
 "43
+[e ( _I2C_MasterWrite ..  ]
+[; ;lcd_lib.c: 45: while (I2C_BUSY == I2C_Close());
+"45
 [e $U 1738  ]
 [e :U 1739 ]
 [e :U 1738 ]
 [e $ == -> . `E11949 1 `i -> ( _I2C_Close ..  `i 1739  ]
 [e :U 1740 ]
-[; ;lcd_lib.c: 46: if ((cmd == 0x01) || (cmd == 0x02))
-"46
+[; ;lcd_lib.c: 48: if ((cmd == 0x01) || (cmd == 0x02))
+"48
 [e $ ! || == -> _cmd `i -> 1 `i == -> _cmd `i -> 2 `i 1741  ]
-[; ;lcd_lib.c: 47: _delay((unsigned long)((2)*(32000000/4000.0)));
-"47
+[; ;lcd_lib.c: 49: _delay((unsigned long)((2)*(32000000/4000.0)));
+"49
 [e ( __delay (1 -> * -> -> 2 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
 [e $U 1742  ]
-"48
+"50
 [e :U 1741 ]
-[; ;lcd_lib.c: 48: else
-[; ;lcd_lib.c: 49: _delay((unsigned long)((30)*(32000000/4000000.0)));
-"49
+[; ;lcd_lib.c: 50: else
+[; ;lcd_lib.c: 51: _delay((unsigned long)((30)*(32000000/4000000.0)));
+"51
 [e ( __delay (1 -> * -> -> 30 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
 [e :U 1742 ]
-[; ;lcd_lib.c: 50: }
-"50
+[; ;lcd_lib.c: 52: }
+"52
 [e :UE 1734 ]
 }
-"55
+"57
 [v _lcd_init `(v ~T0 @X0 1 ef ]
-"56
+"58
 {
-[; ;lcd_lib.c: 55: void lcd_init(void)
-[; ;lcd_lib.c: 56: {
+[; ;lcd_lib.c: 57: void lcd_init(void)
+[; ;lcd_lib.c: 58: {
 [e :U _lcd_init ]
 [f ]
-[; ;lcd_lib.c: 57: _delay((unsigned long)((150)*(32000000/4000.0)));
-"57
-[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-[; ;lcd_lib.c: 58: lcd_cmd(0x38);
-"58
-[e ( _lcd_cmd (1 -> -> 56 `i `uc ]
-[; ;lcd_lib.c: 59: lcd_cmd(0x39);
+[; ;lcd_lib.c: 59: _delay((unsigned long)((150)*(32000000/4000.0)));
 "59
-[e ( _lcd_cmd (1 -> -> 57 `i `uc ]
-[; ;lcd_lib.c: 60: lcd_cmd(0x14);
+[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;lcd_lib.c: 60: lcd_cmd(0x38);
 "60
-[e ( _lcd_cmd (1 -> -> 20 `i `uc ]
-[; ;lcd_lib.c: 62: lcd_cmd(0x70 + (0x18 & 0x0F));
-"62
-[e ( _lcd_cmd (1 -> + -> 112 `i & -> 24 `i -> 15 `i `uc ]
-[; ;lcd_lib.c: 63: lcd_cmd(0x5C + (0x18 >> 4));
-"63
-[e ( _lcd_cmd (1 -> + -> 92 `i >> -> 24 `i -> 4 `i `uc ]
-[; ;lcd_lib.c: 65: lcd_cmd(0x6B);
-"65
-[e ( _lcd_cmd (1 -> -> 107 `i `uc ]
-[; ;lcd_lib.c: 66: _delay((unsigned long)((300)*(32000000/4000.0)));
-"66
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-[; ;lcd_lib.c: 67: lcd_cmd(0x38);
-"67
 [e ( _lcd_cmd (1 -> -> 56 `i `uc ]
-[; ;lcd_lib.c: 68: lcd_cmd(0x0C);
+[; ;lcd_lib.c: 61: lcd_cmd(0x39);
+"61
+[e ( _lcd_cmd (1 -> -> 57 `i `uc ]
+[; ;lcd_lib.c: 62: lcd_cmd(0x14);
+"62
+[e ( _lcd_cmd (1 -> -> 20 `i `uc ]
+[; ;lcd_lib.c: 64: lcd_cmd(0x70 + (0x18 & 0x0F));
+"64
+[e ( _lcd_cmd (1 -> + -> 112 `i & -> 24 `i -> 15 `i `uc ]
+[; ;lcd_lib.c: 65: lcd_cmd(0x5C + (0x18 >> 4));
+"65
+[e ( _lcd_cmd (1 -> + -> 92 `i >> -> 24 `i -> 4 `i `uc ]
+[; ;lcd_lib.c: 67: lcd_cmd(0x6B);
+"67
+[e ( _lcd_cmd (1 -> -> 107 `i `uc ]
+[; ;lcd_lib.c: 68: _delay((unsigned long)((300)*(32000000/4000.0)));
 "68
-[e ( _lcd_cmd (1 -> -> 12 `i `uc ]
-[; ;lcd_lib.c: 69: lcd_cmd(0x01);
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;lcd_lib.c: 69: lcd_cmd(0x38);
 "69
-[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
-[; ;lcd_lib.c: 70: }
+[e ( _lcd_cmd (1 -> -> 56 `i `uc ]
+[; ;lcd_lib.c: 70: lcd_cmd(0x0C);
 "70
+[e ( _lcd_cmd (1 -> -> 12 `i `uc ]
+[; ;lcd_lib.c: 71: lcd_cmd(0x01);
+"71
+[e ( _lcd_cmd (1 -> -> 1 `i `uc ]
+[; ;lcd_lib.c: 72: }
+"72
 [e :UE 1743 ]
 }
-"75
+"77
 [v _lcd_clear `(v ~T0 @X0 1 ef ]
-"76
+"78
 {
-[; ;lcd_lib.c: 75: void lcd_clear(void)
-[; ;lcd_lib.c: 76: {
+[; ;lcd_lib.c: 77: void lcd_clear(void)
+[; ;lcd_lib.c: 78: {
 [e :U _lcd_clear ]
 [f ]
-[; ;lcd_lib.c: 77: lcd_cmd(0x01);
-"77
+[; ;lcd_lib.c: 79: lcd_cmd(0x01);
+"79
 [e ( _lcd_cmd (1 -> -> 1 `i `uc ]
-[; ;lcd_lib.c: 78: }
-"78
+[; ;lcd_lib.c: 80: }
+"80
 [e :UE 1744 ]
 }
-"83
-[v _lcd_str `(v ~T0 @X0 1 ef1`*Cuc ]
-"84
-{
-[; ;lcd_lib.c: 83: void lcd_str(const unsigned char* ptr)
-[; ;lcd_lib.c: 84: {
-[e :U _lcd_str ]
-"83
-[v _ptr `*Cuc ~T0 @X0 1 r1 ]
-"84
-[f ]
-[; ;lcd_lib.c: 85: while (*ptr != 0)
 "85
+[v _lcd_str `(v ~T0 @X0 1 ef1`*Cuc ]
+"86
+{
+[; ;lcd_lib.c: 85: void lcd_str(const unsigned char* ptr)
+[; ;lcd_lib.c: 86: {
+[e :U _lcd_str ]
+"85
+[v _ptr `*Cuc ~T0 @X0 1 r1 ]
+"86
+[f ]
+[; ;lcd_lib.c: 87: while (*ptr != 0)
+"87
 [e $U 1746  ]
 [e :U 1747 ]
-[; ;lcd_lib.c: 86: lcd_data(*ptr++);
-"86
+[; ;lcd_lib.c: 88: lcd_data(*ptr++);
+"88
 [e ( _lcd_data (1 *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x ]
 [e :U 1746 ]
-"85
+"87
 [e $ != -> *U _ptr `i -> 0 `i 1747  ]
 [e :U 1748 ]
-[; ;lcd_lib.c: 87: }
-"87
+[; ;lcd_lib.c: 89: }
+"89
 [e :UE 1745 ]
 }
-"92
+"94
 [v _lcd_icon `(v ~T0 @X0 1 ef2`ui`uc ]
-"93
+"95
 {
-[; ;lcd_lib.c: 92: void lcd_icon(unsigned int num, unsigned char onoff)
-[; ;lcd_lib.c: 93: {
+[; ;lcd_lib.c: 94: void lcd_icon(unsigned int num, unsigned char onoff)
+[; ;lcd_lib.c: 95: {
 [e :U _lcd_icon ]
-"92
+"94
 [v _num `ui ~T0 @X0 1 r1 ]
 [v _onoff `uc ~T0 @X0 1 r2 ]
-"93
-[f ]
-[; ;lcd_lib.c: 94: lcd_cmd(0x39);
-"94
-[e ( _lcd_cmd (1 -> -> 57 `i `uc ]
-[; ;lcd_lib.c: 95: lcd_cmd(0x40 + ICON[num][0]);
 "95
-[e ( _lcd_cmd (1 -> + -> -> 64 `i `ui *U + &U *U + &U _ICON * -> _num `ux -> * -> # *U &U *U &U _ICON `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _ICON * -> _num `ux -> * -> # *U &U *U &U _ICON `ui -> -> 2 `i `ui `ux `ui `ux `uc ]
-[; ;lcd_lib.c: 96: if (onoff)
+[f ]
+[; ;lcd_lib.c: 96: lcd_cmd(0x39);
 "96
-[e $ ! != -> _onoff `i -> -> -> 0 `i `uc `i 1750  ]
-[; ;lcd_lib.c: 97: lcd_data(ICON[num][1]);
+[e ( _lcd_cmd (1 -> -> 57 `i `uc ]
+[; ;lcd_lib.c: 97: lcd_cmd(0x40 + ICON[num][0]);
 "97
+[e ( _lcd_cmd (1 -> + -> -> 64 `i `ui *U + &U *U + &U _ICON * -> _num `ux -> * -> # *U &U *U &U _ICON `ui -> -> 2 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _ICON * -> _num `ux -> * -> # *U &U *U &U _ICON `ui -> -> 2 `i `ui `ux `ui `ux `uc ]
+[; ;lcd_lib.c: 98: if (onoff)
+"98
+[e $ ! != -> _onoff `i -> -> -> 0 `i `uc `i 1750  ]
+[; ;lcd_lib.c: 99: lcd_data(ICON[num][1]);
+"99
 [e ( _lcd_data (1 -> *U + &U *U + &U _ICON * -> _num `ux -> * -> # *U &U *U &U _ICON `ui -> -> 2 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _ICON * -> _num `ux -> * -> # *U &U *U &U _ICON `ui -> -> 2 `i `ui `ux `ui `ux `uc ]
 [e $U 1751  ]
-"98
+"100
 [e :U 1750 ]
-[; ;lcd_lib.c: 98: else
-[; ;lcd_lib.c: 99: lcd_data(0x00);
-"99
+[; ;lcd_lib.c: 100: else
+[; ;lcd_lib.c: 101: lcd_data(0x00);
+"101
 [e ( _lcd_data (1 -> -> 0 `i `uc ]
 [e :U 1751 ]
-[; ;lcd_lib.c: 100: lcd_cmd(0x38);
-"100
+[; ;lcd_lib.c: 102: lcd_cmd(0x38);
+"102
 [e ( _lcd_cmd (1 -> -> 56 `i `uc ]
-[; ;lcd_lib.c: 101: }
-"101
+[; ;lcd_lib.c: 103: }
+"103
 [e :UE 1749 ]
 }

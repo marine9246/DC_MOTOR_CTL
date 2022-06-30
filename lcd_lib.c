@@ -10,6 +10,8 @@
 #include "lcd_lib.h"
 #include "mcc_generated_files/i2c_master.h"
 #include "mcc_generated_files/mcc.h"
+
+#define LCDADDR 0x3E        //LCD I2Cアドレス
 /*********************************
  * 液晶へ1文字表示データ出力
  *********************************/
@@ -19,7 +21,7 @@ void lcd_data(unsigned char data)
     tbuf[0] = 0x40; // データ指定
     tbuf[1] = data; // 文字データ
 
-    while (!I2C_Open(0x3E)); //バス取得待ち　0x3E：LCDスレーブアドレス
+    while (!I2C_Open(LCDADDR)); //バス取得待ち　LCDADDR：LCDスレーブアドレス
     I2C_SetBuffer(tbuf, 2); //2バイトバッファ指定
     I2C_MasterWrite(); //送信実行
 
@@ -36,7 +38,7 @@ void lcd_cmd(unsigned char cmd)
     tbuf[0] = 0x00; // コマンド指定
     tbuf[1] = cmd; // コマンドデータ
 
-    while (!I2C_Open(0x3E)); //バス取得待ち　0x3E：LCDスレーブアドレス
+    while (!I2C_Open(LCDADDR)); //バス取得待ち　LCDADDR：LCDスレーブアドレス
     I2C_SetBuffer(tbuf, 2); //2バイトバッファ指定
     I2C_MasterWrite(); //送信実行
 

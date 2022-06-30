@@ -20180,7 +20180,7 @@ void OSCILLATOR_Initialize(void);
 # 98
 void WDT_Initialize(void);
 
-# 16 "lcd_lib.c"
+# 18 "lcd_lib.c"
 void lcd_data(unsigned char data)
 {
 unsigned char tbuf[2];
@@ -20195,7 +20195,7 @@ while (I2C_BUSY == I2C_Close());
 _delay((unsigned long)((30)*(32000000/4000000.0)));
 }
 
-# 33
+# 35
 void lcd_cmd(unsigned char cmd)
 {
 unsigned char tbuf[2];
@@ -20215,7 +20215,7 @@ else
 _delay((unsigned long)((30)*(32000000/4000000.0)));
 }
 
-# 55
+# 57
 void lcd_init(void)
 {
 _delay((unsigned long)((150)*(32000000/4000.0)));
@@ -20233,20 +20233,20 @@ lcd_cmd(0x0C);
 lcd_cmd(0x01);
 }
 
-# 75
+# 77
 void lcd_clear(void)
 {
 lcd_cmd(0x01);
 }
 
-# 83
+# 85
 void lcd_str(const unsigned char* ptr)
 {
 while (*ptr != 0)
 lcd_data(*ptr++);
 }
 
-# 92
+# 94
 void lcd_icon(unsigned int num, unsigned char onoff)
 {
 lcd_cmd(0x39);
